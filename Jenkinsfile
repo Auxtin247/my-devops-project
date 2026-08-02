@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Cloning the code from GitHub...'
-                git 'https://github.com/Auxtin247/my-devops-project.git'
+                git branch: 'main', url: 'https://github.com/Auxtin247/my-devops-project.git'
             }
         }
 
